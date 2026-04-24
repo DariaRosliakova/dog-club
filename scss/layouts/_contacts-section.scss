@@ -1,0 +1,59 @@
+.contacts-section__text {
+  color: var(--secondary-grey-cl);
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 5%;
+  margin-bottom: 42px;
+}
+.contacts-section {
+  position: relative;
+  padding: 168px 0 102px;
+  text-align: center;
+  background-image: url('/images/contacts/contacts-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -36px;
+}
+.contacts-section__form {
+  margin: 0 auto;
+  max-width: 600px;
+  max-height: 341px;
+}
+.contacts-section__title {
+  margin: 0 auto 40px;
+  max-width: 600px;
+}
+.contacts-light-dog {
+  top: 230px;
+  left: -20px;
+}
+.contacts-red-dog {
+  z-index: 2;
+  top: 50px;
+  right: 0;
+}
+.contacts-paw-1 {
+  top: 130px;
+  left: 266px;
+}
+.contacts-paw-2 {
+  top: 51px;
+  right: 187px;
+  transform: rotate(76deg);
+}
+.contacts-bone-1 {
+  z-index: 0;
+  top: 123px;
+  left: 600px;
+}
+.contacts-bone-2 {
+  top: 134px;
+  right: -11px;
+  -webkit-transform: rotate(76deg);
+  transform: rotate(181deg);
+  z-index: 0;
+}
+.contacts-collar {
+  top: 197px;
+  left: 0;
+}

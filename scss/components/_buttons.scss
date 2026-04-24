@@ -1,0 +1,33 @@
+.btn {
+  padding: 16px 32px;
+  font-size: 18px;
+  color: var(--primary-white-cl);
+  background: var(--primary-accent-cl);
+  border-radius: 8px;
+  border: none;
+  &--small {
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-white-cl);
+    background: var(--primary-accent-cl);
+    border-radius: 4px;
+    border: none;
+  }
+}
+.btn-learn {
+  background: url('../../images/activity/learn-more-bg.svg') no-repeat
+    center/cover;
+  width: 161px;
+  height: 123px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: -24px;
+  left: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}

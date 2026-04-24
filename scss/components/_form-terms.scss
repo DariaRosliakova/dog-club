@@ -1,0 +1,43 @@
+.form-terms__label {
+  color: var(--secondary-grey-cl);
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: fit-content;
+}
+.form-terms__label-contacts {
+  margin: 0 auto;
+}
+.form-terms {
+  margin-top: 16px;
+}
+.form-terms__control {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-terms__icon {
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.form-terms__icon--empty {
+  display: block;
+}
+
+.form-terms__icon--checked {
+  display: none;
+}
+.form-terms__control:checked ~ .form-terms__icon--empty {
+  display: none;
+}
+
+.form-terms__control:checked ~ .form-terms__icon--checked {
+  display: block;
+}

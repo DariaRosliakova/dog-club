@@ -1,0 +1,40 @@
+.services-section__more-link {
+  color: var(--primary-accent-cl);
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 5%;
+}
+.services-section {
+  padding: 68px 0 95px;
+  background-image: url(/images/services/services-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.services-section__title {
+  margin-bottom: 48px;
+}
+.services-section__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 24px;
+}
+.services-section__list {
+  display: flex;
+  gap: 24px;
+}
+.services-section__container {
+  position: relative;
+}
+.icon-arrow--big {
+  position: absolute;
+  top: -79px;
+  right: -9px;
+}
+.services-section__more-services {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

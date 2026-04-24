@@ -1,0 +1,35 @@
+.customers-section {
+  text-align: center;
+}
+.customers-section__container {
+  position: relative;
+}
+.customers-section__title {
+  margin-bottom: 48px;
+}
+.paw-7 {
+  top: -10px;
+  left: 0;
+}
+.paw-8 {
+  transform: rotate(271deg);
+  top: 22px;
+  right: -90px;
+}
+.paw-9 {
+  transform: rotate(271deg);
+  bottom: -104px;
+  left: -214px;
+}
+.customers-section__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.customers-section__content {
+  overflow: hidden;
+}
+.customers-section__list {
+  margin-bottom: 32px;
+}

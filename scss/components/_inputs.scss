@@ -1,0 +1,56 @@
+.contacts-input__control {
+  color: var(--primary-accent-cl);
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 5%;
+  padding: 12px 40px 12px 80px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--primary-accent-cl);
+  border-radius: 8px;
+}
+.contacts-input__control::placeholder {
+  color: var(--primary-accent-cl);
+}
+.footer-input__control {
+  color: var(--primary-accent-cl);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 10px 24px 10px 56px;
+  background: transparent;
+  width: 320px;
+  border: 1px solid var(--primary-accent-cl);
+  border-radius: 8px;
+}
+.footer-input__control-email {
+  padding: 8px 24px 8px 56px;
+}
+.footer-input__control-cmc {
+  padding: 8px 24px;
+}
+.footer-input__control::placeholder {
+  color: var(--primary-accent-cl);
+}
+.footer-input {
+  position: relative;
+  margin-bottom: 16px;
+}
+.footer-input__icon {
+  position: absolute;
+  top: 8px;
+  left: 24px;
+}
+.contacts-input {
+  position: relative;
+  margin-bottom: 24px;
+}
+.contacts-input__icon {
+  position: absolute;
+  top: 8px;
+  left: 40px;
+}
+.contacts-input__label {
+  top: 8px;
+  left: 80px;
+}

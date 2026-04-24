@@ -1,0 +1,63 @@
+.activity-section__text {
+  line-height: 1.5;
+}
+.activity-section {
+  padding-top: 160px;
+  padding-bottom: 119px;
+}
+.activity-section__title {
+  margin-bottom: 40px;
+}
+.activity-section__container {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+.activity-section__content {
+  max-width: 640px;
+  margin-left: auto;
+}
+.icon-light-dog-bg {
+  z-index: -1;
+  top: -76px;
+  left: 24px;
+}
+.activity-light-dog {
+  left: 25px;
+  width: 470px;
+}
+.paw--grey-1 {
+  top: -53px;
+  left: 186px;
+}
+.paw--grey-2 {
+  bottom: 126px;
+  left: 76px;
+  transform: rotate(309deg);
+}
+.paw--grey-3 {
+  bottom: 195px;
+  left: 407px;
+  transform: rotate(64deg);
+}
+.btn-learn__text {
+  font-size: 16px;
+  color: var(--primary-white-cl);
+}
+.paw-4 {
+  left: -120px;
+  top: 0;
+}
+.icon-bowl {
+  bottom: -80px;
+  left: 225px;
+}
+.paw-5 {
+  right: 155px;
+  bottom: -94px;
+}
+.paw-6 {
+  right: -142px;
+  top: -99px;
+  transform: rotate(271deg);
+}

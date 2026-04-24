@@ -1,0 +1,97 @@
+.hero-section__title {
+  font-family: var(--secondary-font);
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: 5%;
+  max-width: 635px;
+  margin-bottom: 40px;
+}
+.hero-section__text {
+  line-height: 1.5;
+  max-width: 420px;
+}
+.hero-section {
+  padding-top: 212px;
+  padding-bottom: 236px;
+  background-image: url(/images/hero/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+.hero-section__container {
+  display: flex;
+  position: relative;
+  gap: 20px;
+}
+
+.paw {
+  position: absolute;
+  z-index: -1;
+  filter: blur(4px);
+}
+.paw-1 {
+  top: -254px;
+  left: 735px;
+}
+.paw-2 {
+  top: -214px;
+  right: -90px;
+
+  transform: rotate(271deg);
+}
+.paw-3 {
+  bottom: -243px;
+  left: 119px;
+}
+.icon-arrow--small {
+  position: absolute;
+  top: -62px;
+  left: 476px;
+}
+.black-dog-bg {
+  top: 23px;
+  right: 77px;
+}
+.black-dog {
+  top: 23px;
+  right: 73px;
+}
+.icon {
+  position: absolute;
+}
+.small-dog-1,
+.small-dog-2,
+.small-dog-3 {
+  border-radius: 50%;
+}
+.small-dog-1 {
+  top: 250px;
+  left: 583px;
+  transform: rotate(328deg);
+}
+.small-dog-2 {
+  top: -35px;
+  right: 416px;
+  transform: rotate(343deg);
+}
+.small-dog-3 {
+  top: 62px;
+  right: 37px;
+}
+.paw--purple {
+  fill: #d9a6ff;
+  top: 55px;
+  right: 523px;
+  transform: rotate(114deg);
+}
+.paw--orange {
+  fill: #fcb62a;
+  bottom: -81px;
+  left: 607px;
+}
+.paw--pink {
+  fill: #ff6e9f;
+  top: 200px;
+  right: 31px;
+  transform: rotate(184deg);
+}
