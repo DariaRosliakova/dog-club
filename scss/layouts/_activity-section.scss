@@ -61,3 +61,9 @@
   top: -99px;
   transform: rotate(271deg);
 }
+.icon-play-video {
+  fill: var(--primary-white-cl);
+  .btn-learn:hover & {
+    fill: var(--primary-accent-cl);
+  }
+}

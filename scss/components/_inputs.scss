@@ -8,9 +8,16 @@
   background: transparent;
   border: 1px solid var(--primary-accent-cl);
   border-radius: 8px;
+  outline: none;
+  &:focus {
+    color: #181817;
+  }
 }
 .contacts-input__control::placeholder {
   color: var(--primary-accent-cl);
+}
+.contacts-input__control:focus::placeholder {
+  color: #181817;
 }
 .footer-input__control {
   color: var(--primary-accent-cl);
@@ -22,6 +29,10 @@
   width: 320px;
   border: 1px solid var(--primary-accent-cl);
   border-radius: 8px;
+  outline: none;
+  &:focus {
+    color: #181817;
+  }
 }
 .footer-input__control-email {
   padding: 8px 24px 8px 56px;
@@ -31,6 +42,9 @@
 }
 .footer-input__control::placeholder {
   color: var(--primary-accent-cl);
+}
+.footer-input__control:focus::placeholder {
+  color: #181817;
 }
 .footer-input {
   position: relative;

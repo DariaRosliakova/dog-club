@@ -2,6 +2,9 @@
   color: var(--primary-accent-cl);
   font-size: 22px;
   font-weight: 600;
+  .service-card:hover & {
+    color: #fcb62a;
+  }
 }
 .service-card {
   display: flex;

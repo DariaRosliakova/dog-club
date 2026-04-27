@@ -2,6 +2,9 @@
   font-size: 18px;
   line-height: 1.3;
   letter-spacing: 5%;
+  &:hover {
+    color: #ff9f0e;
+  }
 }
 .footer-socials {
   display: flex;

@@ -1,3 +1,14 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
 .hero-section__title {
   font-family: var(--secondary-font);
   font-size: 72px;
@@ -63,35 +74,45 @@
 .small-dog-2,
 .small-dog-3 {
   border-radius: 50%;
+  transform-origin: center;
 }
 .small-dog-1 {
   top: 250px;
   left: 583px;
   transform: rotate(328deg);
+  animation: pulse 2s infinite ease-in-out;
 }
 .small-dog-2 {
   top: -35px;
   right: 416px;
   transform: rotate(343deg);
+  animation: pulse 2.5s infinite ease-in-out;
 }
 .small-dog-3 {
   top: 62px;
   right: 37px;
+  animation: pulse 1.8s infinite ease-in-out;
 }
 .paw--purple {
   fill: #d9a6ff;
   top: 55px;
   right: 523px;
   transform: rotate(114deg);
+  animation: pulse 2.2s infinite ease-in-out;
+  transform-origin: center;
 }
 .paw--orange {
   fill: #fcb62a;
   bottom: -81px;
   left: 607px;
+  animation: pulse 2.8s infinite ease-in-out;
+  transform-origin: center;
 }
 .paw--pink {
   fill: #ff6e9f;
   top: 200px;
   right: 31px;
   transform: rotate(184deg);
+  animation: pulse 1.6s infinite ease-in-out;
+  transform-origin: center;
 }
