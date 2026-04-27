@@ -17,23 +17,49 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <nav>
-            <a href="/">
-              <img src="" alt="" />
+          <nav class="header__nav">
+            <a class="header__logo link" href="/">
+              <img src="./images/logo.svg" alt="Dog Club logo" />
             </a>
-            <ul>
-              <li><a href="/">Less talk</a></li>
-              <li><a href="/">Services category</a></li>
-              <li><a href="/">Happy customer</a></li>
-              <li><a href="/">Contact</a></li>
+            <ul class="header__menu">
+              <li>
+                <a
+                  class="header__menu-link link"
+                  href="index.html#activity-section"
+                  >Less talk</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header__menu-link link"
+                  href="index.html#services-section"
+                  >Services category</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header__menu-link link"
+                  href="index.html#customers-section"
+                  >Happy customer</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header__menu-link link"
+                  href="index.html#contacts-section"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </nav>
-          <a href="#">
-            <svg class="socials__icon" width="32" height="32">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          <button type="button">Contact us</button>
+          <div class="header__actions">
+            <a class="header__cart" href="#">
+              <svg class="header__cart-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-basket"></use>
+              </svg>
+            </a>
+            <button class="header__button btn" type="button">Contact us</button>
+          </div>
         </div>
       </div>
     </header>
@@ -207,38 +233,118 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container"></div>
-      <div class="footer__container">
-        <div class="footer__branding">
-          <img class="logo" src="" alt="" />
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__left">
+            <div class="footer__branding">
+              <a class="footer__logo link" href="/">
+                <img
+                  class="footer__logo-icon"
+                  src="./images/logo.svg"
+                  alt="Dog Club logo"
+                />
+              </a>
+              <ul class="footer-socials">
+                <li>
+                  <a href="#">
+                    <svg class="footer-socials__icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="footer-socials__icon" width="40" height="40">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="#activity-section"
+                    >Less talk</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="#services-section"
+                    >Services category</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="#customers-section"
+                    >Happy customer</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="#contacts-section"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <form class="footer__form">
+            <div class="footer-input">
+              <svg class="footer-input__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-form-email"></use>
+              </svg>
+              <input
+                class="footer-input__control footer-input__control-email"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Your email"
+                required
+              />
+              <label
+                class="footer-input__label visually-hidden"
+                for="user-email"
+                >Your email</label
+              >
+            </div>
+            <div class="footer-input">
+              <input
+                class="footer-input__control footer-input__control-cmc"
+                type="text"
+                name="user-cmc"
+                id="user-cmc"
+                placeholder="Your cmc"
+                required
+              />
+              <label class="footer-input__label visually-hidden" for="user-cmc"
+                >Your cmc</label
+              >
+            </div>
+            <button class="btn--small">Contact us</button>
+            <div class="form-terms">
+              <label class="form-terms__label" for="privacy-footer">
+                <input
+                  class="form-terms__control"
+                  type="checkbox"
+                  id="privacy-footer"
+                />
+                <svg
+                  class="form-terms__icon form-terms__icon--empty"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <svg
+                  class="form-terms__icon form-terms__icon--checked"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-checkbox-active"></use>
+                </svg>
+                <span>I agree to the privacy policy</span>
+              </label>
+            </div>
+          </form>
         </div>
-        <nav>
-          <ul>
-            <li><a href="">Less talk</a></li>
-            <li><a href="">Services category</a></li>
-            <li><a href="">Happy customer</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
-        <form>
-          <div class="footer__input">
-            <input type="text" />
-            <label></label>
-          </div>
-          <div class="footer__input">
-            <input type="text" />
-            <label></label>
-          </div>
-          <button>Contact us</button>
-          <div class="form-terms">
-            <input type="checkbox" id="privacy-footer" />
-            <label for="privacy-footer">I agree to the privacy policy</label>
-          </div>
-        </form>
       </div>
     </footer>
   </body>
