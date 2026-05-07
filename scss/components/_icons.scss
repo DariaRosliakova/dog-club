@@ -1,0 +1,98 @@
+.icon {
+  position: absolute;
+  display: block;
+  &--xs {
+    width: 16px;
+    height: 16px;
+  }
+  &--sm {
+    width: 20px;
+    height: 20px;
+  }
+  &--md {
+    width: 24px;
+    height: 24px;
+  }
+  &--lg {
+    width: 32px;
+    height: 32px;
+  }
+  &--xl {
+    width: 40px;
+    height: 40px;
+  }
+  &-bone {
+    width: 32px;
+    height: 14px;
+    fill: var(--secondary-light-blue-cl);
+    &--active {
+      fill: var(--secondary-accent-cl);
+    }
+  }
+  &-arrow {
+    width: 40px;
+    height: 20px;
+    &--small {
+      width: 48px;
+      height: 40px;
+    }
+    &--big {
+      width: 192px;
+      height: 144px;
+    }
+  }
+  &-play {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-white-cl);
+    transition: fill 0.2s;
+    @media screen and (min-width: $bp-desktop) {
+      width: 48px;
+      height: 48px;
+    }
+    .btn-learn:hover & {
+      fill: var(--primary-accent-cl);
+    }
+  }
+  &-paw {
+    @extend .icon;
+    filter: blur(4px);
+    &--page {
+      z-index: -1;
+      fill: var(--background-cl);
+    }
+    &--modal {
+      fill: var(--primary-white-cl);
+    }
+    &--xs {
+      width: 30px;
+      height: 30px;
+      filter: blur(0.5px);
+    }
+    &--sm {
+      width: 56px;
+      height: 56px;
+    }
+    &--md {
+      width: 72px;
+      height: 72px;
+    }
+    &--lg {
+      width: 125px;
+      height: 125px;
+    }
+    &--xl {
+      width: 260px;
+      height: 260px;
+    }
+    &--purple {
+      fill: #d9a6ff;
+    }
+    &--orange {
+      fill: #fcb62a;
+    }
+    &--pink {
+      fill: #ff6e9f;
+    }
+  }
+}

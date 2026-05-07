@@ -1,0 +1,458 @@
+// hero-section
+
+.hero-section {
+  &__main-dog {
+    top: 23px;
+    right: 73px;
+  }
+  &__main-dog-bg {
+    width: 506px;
+    height: 516px;
+    top: 23px;
+    right: 77px;
+  }
+  &__main-dog,
+  &__main-dog-bg {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+  &__arrow {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      width: 70px;
+      height: 52px;
+      top: -62px;
+      left: 476px;
+    }
+  }
+  &__avatar-1,
+  &__avatar-2,
+  &__avatar-3 {
+    border-radius: 50%;
+  }
+  &__avatar-1 {
+    width: 24px;
+    height: 24px;
+    top: 170px;
+    left: 50%;
+    --x: -140px;
+    --r: 328deg;
+    --duration: 2s;
+    @media screen and (min-width: $bp-tablet) {
+      --x: -320px;
+      width: 48px;
+      height: 48px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      --x: 0;
+      top: 250px;
+      left: 583px;
+    }
+  }
+  &__avatar-2 {
+    width: 24px;
+    height: 24px;
+    bottom: -45px;
+    --x: 0;
+    --r: 343deg;
+    --duration: 2.5s;
+    @media screen and (min-width: $bp-tablet) {
+      bottom: -85px;
+      width: 48px;
+      height: 48px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      top: -35px;
+      right: 416px;
+    }
+  }
+  &__avatar-3 {
+    width: 24px;
+    height: 24px;
+    top: 170px;
+    left: 50%;
+    --x: 122px;
+    --r: 345deg;
+    --duration: 1.8s;
+    @media screen and (min-width: $bp-tablet) {
+      --x: 290px;
+      --r: 0deg;
+      right: 57px;
+      width: 48px;
+      height: 48px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      --x: 0;
+      top: 62px;
+      right: 37px;
+      left: auto;
+    }
+  }
+  &__bg-paw-1 {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      top: -204px;
+      left: 735px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      top: -254px;
+    }
+  }
+  &__bg-paw-2 {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      right: -90px;
+      top: -214px;
+      transform: rotate(271deg);
+    }
+  }
+  &__bg-paw-3 {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      bottom: -273px;
+      left: 119px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      bottom: -243px;
+    }
+  }
+  &__accent-paw-1 {
+    top: 67px;
+    left: 50%;
+    --x: 130px;
+    --r: 114deg;
+    --duration: 2.2s;
+    @media screen and (min-width: $bp-tablet) {
+      top: 15px;
+      --x: 300px;
+      width: 42px;
+      height: 42px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      --x: 0;
+      top: 55px;
+      right: 523px;
+      left: auto;
+    }
+  }
+  &__accent-paw-2 {
+    bottom: -31px;
+    left: 50%;
+    --x: -100px;
+    --r: 0deg;
+    --duration: 2.8s;
+    @media screen and (min-width: $bp-tablet) {
+      bottom: -50px;
+      --x: -200px;
+      width: 42px;
+      height: 42px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      --x: 0;
+      bottom: -81px;
+      left: 607px;
+    }
+  }
+  &__accent-paw-3 {
+    bottom: -34px;
+    left: 50%;
+    --x: 70px;
+    --r: 184deg;
+    --duration: 1.6s;
+    @media screen and (min-width: $bp-tablet) {
+      --x: 200px;
+      width: 42px;
+      height: 42px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      --x: 0;
+      top: 200px;
+      right: 31px;
+      left: auto;
+    }
+  }
+}
+
+// activity-section
+
+.activity-section {
+  &__dog {
+    left: 25px;
+    width: 470px;
+  }
+  &__dog-bg {
+    width: 540px;
+    height: 501px;
+    z-index: -1;
+    top: -76px;
+    left: 24px;
+  }
+  &__grey-paw-1 {
+    top: -53px;
+    left: 186px;
+  }
+  &__grey-paw-2 {
+    bottom: 126px;
+    left: 76px;
+    transform: rotate(309deg);
+  }
+  &__grey-paw-3 {
+    bottom: 195px;
+    left: 407px;
+    transform: rotate(64deg);
+  }
+  &__bg-paw-1 {
+    right: 0;
+    top: -50px;
+    width: 70px;
+    height: 70px;
+    filter: blur(2px);
+    @media screen and (min-width: $bp-tablet) {
+      width: 125px;
+      height: 125px;
+      left: -120px;
+      top: 0;
+      filter: blur(4px);
+    }
+  }
+  &__bg-paw-2 {
+    right: 31px;
+    top: 29px;
+    transform: rotate(263deg);
+    @media screen and (min-width: $bp-tablet) {
+      width: 125px;
+      height: 125px;
+      right: 155px;
+      bottom: -94px;
+      top: auto;
+      filter: blur(4px);
+      transform: none;
+    }
+  }
+  &__bg-paw-3 {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+
+      right: -142px;
+      top: -99px;
+      transform: rotate(271deg);
+    }
+  }
+  &__arrow {
+    display: block;
+    left: 160px;
+    @media screen and (min-width: $bp-tablet) {
+      top: 6px;
+      left: 238px;
+      width: 70px;
+      height: 52px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &__bowl {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      width: 72px;
+      height: 48px;
+      bottom: -80px;
+      left: 225px;
+      display: block;
+    }
+  }
+}
+
+// services-section
+
+.services-section {
+  &__arrow {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      top: -79px;
+      right: -9px;
+    }
+  }
+}
+
+// customers-section
+
+.customers-section {
+  &__bg-paw-1 {
+    left: -16px;
+    bottom: -24px;
+    width: 56px;
+    height: 56px;
+    filter: blur(1.5px);
+    transform: rotate(269deg);
+    @media screen and (min-width: $bp-tablet) {
+      width: 98px;
+      height: 98px;
+      bottom: auto;
+      top: -10px;
+      left: 0;
+      transform: none;
+      filter: blur(4px);
+    }
+  }
+  &__bg-paw-2 {
+    right: 53px;
+    bottom: -13px;
+    transform: rotate(331deg);
+    @media screen and (min-width: $bp-tablet) {
+      width: 125px;
+      height: 125px;
+      transform: rotate(271deg);
+      top: 22px;
+      bottom: auto;
+      right: -90px;
+      filter: blur(4px);
+    }
+  }
+  &__bg-paw-3 {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      transform: rotate(271deg);
+      bottom: -104px;
+      left: -214px;
+    }
+  }
+}
+
+// contacts-section
+
+.contacts-section {
+  &__dog-light {
+    top: 230px;
+    left: -20px;
+  }
+  &__dog-red {
+    z-index: 2;
+    top: 50px;
+    right: 0;
+  }
+  &__paw-1 {
+    top: 62px;
+    left: 50%;
+    transform: translateX(-53px);
+    @media screen and (min-width: $bp-tablet) {
+      top: 85px;
+      transform: translateX(-315px);
+      width: 80px;
+      height: 80px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      left: 266px;
+      transform: none;
+    }
+  }
+  &__paw-2 {
+    width: 80px;
+    height: 80px;
+    top: 51px;
+    right: 187px;
+    transform: rotate(76deg);
+  }
+  &__bone-1 {
+    top: 62px;
+    left: 50%;
+    transform: translateX(53px);
+    width: 24px;
+    height: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      z-index: 0;
+      top: 103px;
+      transform: translateX(214px);
+      width: 80px;
+      height: 68px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      top: 123px;
+      left: 600px;
+      transform: none;
+    }
+  }
+  &__bone-2 {
+    width: 80px;
+    height: 68px;
+    top: 134px;
+    right: -11px;
+    transform: rotate(181deg);
+    z-index: 0;
+  }
+  &__collar {
+    top: 66px;
+    left: 50%;
+    transform: translateX(-175px);
+    @media screen and (min-width: $bp-tablet) {
+      top: 247px;
+      left: 0;
+      transform: none;
+      width: 80px;
+      height: 80px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      top: 197px;
+    }
+  }
+  &__dog-light,
+  &__dog-red,
+  &__bone-2,
+  &__paw-2 {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__bg-mobile-paw-1,
+  &__bg-mobile-paw-2 {
+    display: block;
+    filter: blur(2px);
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &__bg-mobile-paw-1 {
+    left: -10px;
+    bottom: 82px;
+  }
+  &__bg-mobile-paw-2 {
+    width: 42px;
+    height: 42px;
+    right: -6px;
+    bottom: 122px;
+    transform: rotate(278deg);
+  }
+}
+
+// modal
+
+.modal {
+  &__bg-paw-1 {
+    top: 20px;
+    right: 113px;
+  }
+  &__bg-paw-2 {
+    top: 195px;
+    left: 0px;
+    transform: rotate(265deg);
+  }
+  &__bg-paw-3 {
+    bottom: -32px;
+    left: -18px;
+    transform: rotate(158deg);
+  }
+  &__bg-paw-4 {
+    bottom: 15px;
+    right: 30px;
+  }
+}

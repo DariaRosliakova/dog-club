@@ -1,0 +1,28 @@
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(var(--x, 0), 0) scale(1) rotate(var(--r, 0));
+  }
+  50% {
+    transform: translate(var(--x, 0), -5px) scale(1.1) rotate(var(--r, 0));
+  }
+}
+
+.icon--animated {
+  animation: pulse var(--duration, 2s) infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes pulse-arrow {
+  0%,
+  100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(0.95) translateY(-5px);
+  }
+}
+
+.icon-arrow--animated {
+  animation: pulse-arrow 1.6s infinite ease-in-out;
+}

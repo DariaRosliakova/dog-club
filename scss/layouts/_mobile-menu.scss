@@ -1,0 +1,55 @@
+.mobile-menu {
+  position: fixed;
+  padding: 20px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-white-cl);
+  background-image: url('../images/mobile/background.svg');
+  background-repeat: no-repeat;
+  background-position: center 267px;
+  transform: translateX(100%);
+  transition: transform 0.2s;
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__btn-close {
+    position: absolute;
+    padding: 0;
+    top: 20px;
+    right: 24px;
+    background-color: transparent;
+    stroke: var(--primary-accent-cl);
+    fill: none;
+    border: none;
+    cursor: pointer;
+    &-icon {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &__logo {
+    width: 92px;
+    height: 20px;
+    margin-bottom: 32px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 1.3;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+  &__socials {
+    display: flex;
+    gap: 8px;
+  }
+}

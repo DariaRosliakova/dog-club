@@ -10,6 +10,9 @@
   border-radius: 50%;
   border: 1px solid var(--secondary-grey-cl);
   cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border 0.2s;
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -17,7 +20,10 @@
     background-color: var(--primary-accent-cl);
     border: 1px solid var(--primary-accent-cl);
   }
-
+  &__arrow {
+    width: 16px;
+    height: 16px;
+  }
   &.next {
     transform: rotate(180deg);
   }

@@ -6,3 +6,17 @@
   height: 1px;
   overflow: hidden;
 }
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 32px;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 56px;
+  }
+}
+.text {
+  margin-bottom: 24px;
+}

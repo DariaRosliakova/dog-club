@@ -1,4 +1,8 @@
 .link {
   color: var(--primary-dark-cl);
   text-decoration: none;
+  transition: color 0.2s;
+  &:hover {
+    color: var(--primary-accent-cl);
+  }
 }

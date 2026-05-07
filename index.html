@@ -22,8 +22,11 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a class="header__logo link" href="/">
+            <a class="header__logo link" href="index.html">
               <img src="./images/logo.svg" alt="Dog Club logo" />
+            </a>
+            <a class="header__logo--mobile link" href="index.html">
+              <img src="./images/logo-mobile.svg" alt="Dog Club logo" />
             </a>
             <ul class="header__menu">
               <li>
@@ -50,15 +53,76 @@
           </nav>
           <div class="header__actions">
             <a class="header__cart" href="#">
-              <svg class="header__cart-icon" width="40" height="40">
+              <svg class="header__cart-icon">
                 <use href="./images/icons.svg#icon-basket"></use>
               </svg>
             </a>
-            <button class="header__button btn" type="button">Contact us</button>
+            <button class="header__button btn modal-btn-open" type="button">
+              Contact us
+            </button>
+            <button class="header__burger menu-btn-open" type="button">
+              <svg class="header__burger-icon icon--md">
+                <use href="./images/icons.svg#icon-burger"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </header>
+    <div class="mobile-menu">
+      <a class="mobile-menu__logo link" href="index.html">
+        <img src="./images/logo-mobile.svg" alt="Dog Club logo" />
+      </a>
+      <button class="mobile-menu__btn-close menu-btn-close" type="button">
+        <svg class="mobile-menu__btn-close-icon">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__list">
+        <li>
+          <a class="mobile-menu__link link" href="#activity-section"
+            >Less talk</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__link link" href="#services-section"
+            >Services category</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__link link" href="#customers-section"
+            >Happy customer</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__link link" href="#contacts-section">Contact</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="icon--lg">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="icon--lg">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <main>
       <section class="hero-section">
         <div class="container hero-section__container">
@@ -67,88 +131,108 @@
             <p class="hero-section__text text">
               Human–canine bonding is the relationship between dogs and humans
             </p>
-            <button class="hero-section__button btn" type="button">
-              Explore More
-            </button>
+            <button class="btn" type="button">Explore More</button>
           </div>
-          <div class="hero-section__image">
-            <svg class="icon black-dog-bg" width="506" height="516">
-              <use href="./images/icons.svg#icon-black-dog-bg"></use>
-            </svg>
-            <img
-              class="icon black-dog"
-              src="./images/hero/hero-black-dog.png"
-              alt=""
-            />
-            <img
-              class="icon small-dog-1"
-              src="./images/hero/hero-dog-1.jpg"
-              alt=""
-            />
-            <img
-              class="icon small-dog-2"
-              src="./images/hero/hero-dog-2.jpg"
-              alt=""
-            />
-            <img
-              class="icon small-dog-3"
-              src="./images/hero/hero-dog-3.jpg"
-              alt=""
-            />
-            <svg class="icon paw--purple" width="42" height="42">
-              <use href="./images/icons.svg#icon-hero-paw"></use>
-            </svg>
-            <svg class="icon paw--orange" width="42" height="42">
-              <use href="./images/icons.svg#icon-hero-paw"></use>
-            </svg>
-            <svg class="icon paw--pink" width="42" height="42">
-              <use href="./images/icons.svg#icon-hero-paw"></use>
-            </svg>
-          </div>
-          <div class="hero-section__decor">
-            <svg class="paw paw-1" width="125" height="125">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-            <svg class="paw paw-2" width="125" height="125">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-            <svg class="paw paw-3" width="125" height="125">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-            <svg class="icon-arrow--small" width="70" height="52">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </div>
+
+          <svg class="icon hero-section__main-dog-bg">
+            <use href="./images/icons.svg#icon-black-dog-bg"></use>
+          </svg>
+          <img
+            class="icon hero-section__main-dog"
+            src="./images/hero/hero-black-dog.png"
+            srcset="./images/hero/hero-black-dog@2x.png 2x"
+            alt="Happy black Border Collie with white chest smiling"
+          />
+          <img
+            class="icon icon--animated hero-section__avatar-1"
+            src="./images/hero/hero-dog-1.jpg"
+            srcset="./images/hero/hero-dog-1@2x.jpg 2x"
+            alt="White dog smiling portrait"
+          />
+          <img
+            class="icon icon--animated hero-section__avatar-2"
+            src="./images/hero/hero-dog-2.jpg"
+            srcset="./images/hero/hero-dog-2@2x.jpg 2x"
+            alt="Brown dog portrait"
+          />
+          <img
+            class="icon icon--animated hero-section__avatar-3"
+            src="./images/hero/hero-dog-3.jpg"
+            srcset="./images/hero/hero-dog-3@2x.jpg 2x"
+            alt="White dog with red bandana portrait"
+          />
+          <svg
+            class="icon icon--sm icon-paw--purple icon--animated hero-section__accent-paw-1"
+          >
+            <use href="./images/icons.svg#icon-hero-paw"></use>
+          </svg>
+          <svg
+            class="icon icon--sm icon-paw--orange icon--animated hero-section__accent-paw-2"
+          >
+            <use href="./images/icons.svg#icon-hero-paw"></use>
+          </svg>
+          <svg
+            class="icon icon--sm icon-paw--pink icon--animated hero-section__accent-paw-3"
+          >
+            <use href="./images/icons.svg#icon-hero-paw"></use>
+          </svg>
+
+          <svg
+            class="icon-paw icon-paw--page icon-paw--lg hero-section__bg-paw-1"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg
+            class="icon-paw icon-paw--page icon-paw--lg hero-section__bg-paw-2"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg
+            class="icon-paw icon-paw--page icon-paw--lg hero-section__bg-paw-3"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg class="icon hero-section__arrow">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
         </div>
       </section>
       <section class="activity-section" id="activity-section">
         <div class="container activity-section__container">
           <div class="activity-section__image">
-            <svg class="icon icon-light-dog-bg" width="540" height="501">
+            <svg class="icon activity-section__dog-bg">
               <use href="./images/icons.svg#icon-light-dog-bg"></use>
             </svg>
-            <svg class="icon paw--grey-1" width="56" height="56">
+            <svg class="icon icon-paw--sm activity-section__grey-paw-1">
               <use href="./images/icons.svg#icon-light-dog-paw"></use>
             </svg>
-            <svg class="icon paw--grey-2" width="56" height="56">
+            <svg class="icon icon-paw--sm activity-section__grey-paw-2">
               <use href="./images/icons.svg#icon-light-dog-paw"></use>
             </svg>
-            <svg class="icon paw--grey-3" width="56" height="56">
+            <svg class="icon icon-paw--sm activity-section__grey-paw-3">
               <use href="./images/icons.svg#icon-light-dog-paw"></use>
             </svg>
-            <button class="btn-learn">
-              <svg class="icon-play-video" width="48" height="48">
-                <use href="./images/icons.svg#icon-play-video"></use>
-              </svg>
-              <span class="btn-learn__text">Learn more</span>
-            </button>
             <img
-              class="icon activity-light-dog"
+              class="icon activity-section__dog"
               src="./images/activity/activity-light-dog.png"
-              alt=""
+              srcset="./images/activity/activity-light-dog@2x.png 2x"
+              alt="Friendly Rough Collie in light lavender circle"
             />
           </div>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            class="btn-learn link"
+          >
+            <svg class="icon-play">
+              <use href="./images/icons.svg#icon-play-video"></use>
+            </svg>
+            <span class="btn-learn__text">Learn more</span>
+          </a>
           <div class="activity-section__content">
+            <svg class="icon icon-arrow--small activity-section__arrow">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
             <h2 class="activity-section__title title">
               Less talk <br />
               and more walk
@@ -163,20 +247,22 @@
               Explore More
             </button>
           </div>
-          <div class="activity-section__decor">
-            <svg class="paw paw-4" width="125" height="125">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-            <svg class="paw paw-5" width="125" height="125">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-            <svg class="paw paw-6" width="196" height="196">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-            <svg class="icon icon-bowl" width="72" height="48">
-              <use href="./images/icons.svg#icon-bowl"></use>
-            </svg>
-          </div>
+          <svg class="icon-paw icon-paw--page activity-section__bg-paw-1">
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg
+            class="icon-paw icon-paw--page icon-paw--xs activity-section__bg-paw-2"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg
+            class="icon-paw icon-paw--page icon-paw--xl activity-section__bg-paw-3"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg class="icon activity-section__bowl">
+            <use href="./images/icons.svg#icon-bowl"></use>
+          </svg>
         </div>
       </section>
       <section class="services-section" id="services-section">
@@ -186,7 +272,7 @@
             <ul class="services-section__list">
               <li>
                 <a class="service-card link" href="/">
-                  <svg class="service-card__icon" width="96" height="96">
+                  <svg class="service-card__icon">
                     <use href="./images/icons.svg#icon-grooming"></use>
                   </svg>
                   <h3 class="service-card__title">Grooming</h3>
@@ -194,7 +280,7 @@
               </li>
               <li>
                 <a class="service-card link" href="nutrition.html">
-                  <svg class="service-card__icon" width="96" height="96">
+                  <svg class="service-card__icon">
                     <use href="./images/icons.svg#icon-nutrition"></use>
                   </svg>
                   <h3 class="service-card__title">Nutrition</h3>
@@ -202,7 +288,7 @@
               </li>
               <li>
                 <a class="service-card link" href="/">
-                  <svg class="service-card__icon" width="96" height="96">
+                  <svg class="service-card__icon">
                     <use href="./images/icons.svg#icon-training"></use>
                   </svg>
                   <h3 class="service-card__title">Training</h3>
@@ -210,23 +296,23 @@
               </li>
               <li>
                 <a class="service-card link" href="/">
-                  <svg class="service-card__icon" width="96" height="96">
+                  <svg class="service-card__icon">
                     <use href="./images/icons.svg#icon-bathing"></use>
                   </svg>
                   <h3 class="service-card__title">Bathing</h3>
                 </a>
               </li>
             </ul>
-            <div class="services-section__more-services">
+            <div class="services-section__more">
               <a class="services-section__more-link link" href="/"
                 >more services</a
               >
-              <svg class="icon-more-services-arrow" width="40" height="20">
+              <svg class="icon-arrow">
                 <use href="./images/icons.svg#icon-more-services-arrow"></use>
               </svg>
             </div>
           </div>
-          <svg class="icon-arrow--big" width="192" height="144">
+          <svg class="icon icon-arrow--animated services-section__arrow">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </div>
@@ -236,7 +322,7 @@
           <h2 class="customers-section__title title">Happy customer</h2>
           <div class="customers-section__slider">
             <button class="carousel-btn prev" type="button">
-              <svg class="carousel-arrow" width="16" height="16">
+              <svg class="carousel-btn__arrow">
                 <use href="./images/icons.svg#icon-slider-arrow"></use>
               </svg>
             </button>
@@ -247,7 +333,8 @@
                     <img
                       class="customer-card__image"
                       src="./images/customers/christin-customer.jpg"
-                      alt=""
+                      srcset="./images/customers/christin-customer@2x.jpg 2x"
+                      alt="Elderly man with white hair and glasses holding a golden retriever dog outdoors"
                     />
                     <div class="customer-card__content">
                       <h3 class="customer-card__title">Christin & Tom</h3>
@@ -256,19 +343,19 @@
                       </p>
                       <div class="customer-card__rating">
                         <div class="customer-card__rating-icons">
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
@@ -282,7 +369,8 @@
                     <img
                       class="customer-card__image"
                       src="./images/customers/anna-customer.jpg"
-                      alt=""
+                      srcset="./images/customers/anna-customer@2x.jpg 2x"
+                      alt="Woman with dark hair holding a brown dachshund puppy close to her face, smiling"
                     />
                     <div class="customer-card__content">
                       <h3 class="customer-card__title">Anna & Tobby</h3>
@@ -291,19 +379,19 @@
                       </p>
                       <div class="customer-card__rating">
                         <div class="customer-card__rating-icons">
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--white" width="32" height="14">
+                          <svg class="icon-bone">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
@@ -319,7 +407,8 @@
                     <img
                       class="customer-card__image"
                       src="./images/customers/sindy-customer.jpg"
-                      alt=""
+                      srcset="./images/customers/sindy-customer@2x.jpg 2x"
+                      alt="Young woman smiling while holding a small brown and white puppy outdoors in a garden"
                     />
                     <div class="customer-card__content">
                       <h3 class="customer-card__title">Sindy & Kitch</h3>
@@ -328,19 +417,19 @@
                       </p>
                       <div class="customer-card__rating">
                         <div class="customer-card__rating-icons">
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
@@ -356,7 +445,8 @@
                     <img
                       class="customer-card__image"
                       src="./images/customers/christin-customer.jpg"
-                      alt=""
+                      srcset="./images/customers/christin-customer@2x.jpg 2x"
+                      alt="Elderly man with white hair and glasses holding a golden retriever dog outdoors"
                     />
                     <div class="customer-card__content">
                       <h3 class="customer-card__title">Christin & Tom</h3>
@@ -365,19 +455,19 @@
                       </p>
                       <div class="customer-card__rating">
                         <div class="customer-card__rating-icons">
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
@@ -391,7 +481,8 @@
                     <img
                       class="customer-card__image"
                       src="./images/customers/anna-customer.jpg"
-                      alt=""
+                      srcset="./images/customers/anna-customer@2x.jpg 2x"
+                      alt="Woman with dark hair holding a brown dachshund puppy close to her face, smiling"
                     />
                     <div class="customer-card__content">
                       <h3 class="customer-card__title">Anna & Tobby</h3>
@@ -400,19 +491,19 @@
                       </p>
                       <div class="customer-card__rating">
                         <div class="customer-card__rating-icons">
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--white" width="32" height="14">
+                          <svg class="icon-bone">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
@@ -428,7 +519,8 @@
                     <img
                       class="customer-card__image"
                       src="./images/customers/sindy-customer.jpg"
-                      alt=""
+                      srcset="./images/customers/sindy-customer@2x.jpg 2x"
+                      alt="Young woman smiling while holding a small brown and white puppy outdoors in a garden"
                     />
                     <div class="customer-card__content">
                       <h3 class="customer-card__title">Sindy & Kitch</h3>
@@ -437,19 +529,19 @@
                       </p>
                       <div class="customer-card__rating">
                         <div class="customer-card__rating-icons">
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
-                          <svg class="icon-bone--orange" width="32" height="14">
+                          <svg class="icon-bone icon-bone--active">
                             <use href="./images/icons.svg#icon-bone"></use>
                           </svg>
                         </div>
@@ -461,171 +553,189 @@
                   </div>
                 </li>
               </ul>
-              <div class="pagination">
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-              </div>
+              <ul class="pagination">
+                <li>
+                  <button class="pagination__button"></button>
+                </li>
+                <li>
+                  <button class="pagination__button"></button>
+                </li>
+                <li>
+                  <button class="pagination__button"></button>
+                </li>
+                <li>
+                  <button class="pagination__button"></button>
+                </li>
+              </ul>
             </div>
             <button class="carousel-btn next" type="button">
-              <svg class="carousel-arrow" width="16" height="16">
+              <svg class="carousel-btn__arrow">
                 <use href="./images/icons.svg#icon-slider-arrow"></use>
               </svg>
             </button>
           </div>
-
-          <div class="customers-section__decor">
-            <svg class="paw paw-7" width="98" height="98">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-            <svg class="paw paw-8" width="125" height="125">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-            <svg class="paw paw-9" width="270" height="270">
-              <use href="./images/icons.svg#icon-bg-paw"></use>
-            </svg>
-          </div>
+          <svg class="icon-paw icon-paw--page customers-section__bg-paw-1">
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg
+            class="icon-paw icon-paw--page icon-paw--xs customers-section__bg-paw-2"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg
+            class="icon-paw icon-paw--page icon-paw--xl customers-section__bg-paw-3"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
         </div>
       </section>
       <section class="contacts-section" id="contacts-section">
-        <div class="container contacts-section__container">
-          <h2 class="contacts-section__title title">
-            Our experts will take care of your friend
-          </h2>
-          <p class="contacts-section__text">
-            Fill out the form so we can contact you!
-          </p>
-          <form class="contacts-section__form">
-            <div class="contacts-input">
-              <svg class="contacts-input__icon" width="32" height="32">
-                <use href="./images/icons.svg#icon-form-name"></use>
-              </svg>
-              <input
-                class="contacts-input__control"
-                type="text"
-                name="user-name"
-                id="user-name"
-                placeholder="Your name"
-                required
-              />
-              <label
-                class="contacts-input__label visually-hidden"
-                for="user-name"
-                >Your name</label
-              >
-            </div>
-            <div class="contacts-input">
-              <svg class="contacts-input__icon" width="32" height="32">
-                <use href="./images/icons.svg#icon-form-pet-name"></use>
-              </svg>
-              <input
-                class="contacts-input__control"
-                type="text"
-                name="pet-name"
-                id="pet-name"
-                placeholder="Pet name"
-                required
-              />
-              <label
-                class="contacts-input__label visually-hidden"
-                for="pet-name"
-                >Pet name</label
-              >
-            </div>
-            <div class="contacts-input">
-              <svg class="contacts-input__icon" width="32" height="32">
-                <use href="./images/icons.svg#icon-form-phone"></use>
-              </svg>
-              <input
-                class="contacts-input__control"
-                type="tel"
-                name="user-phone"
-                id="user-phone"
-                placeholder="Your phone"
-                required
-                pattern="\+\d{12}"
-              />
-              <label
-                class="contacts-input__label visually-hidden"
-                for="user-phone"
-                >Your phone</label
-              >
-            </div>
-            <div class="contacts-input">
-              <svg class="contacts-input__icon" width="32" height="32">
-                <use href="./images/icons.svg#icon-form-email"></use>
-              </svg>
-              <input
-                class="contacts-input__control"
-                type="email"
-                name="user-email"
-                id="user-email"
-                placeholder="Your email"
-                required
-              />
-              <label
-                class="contacts-input__label visually-hidden"
-                for="user-email"
-                >Your email</label
-              >
-            </div>
-            <button class="btn btn--submit" type="submit">Contact us</button>
-            <div class="form-terms">
-              <label
-                class="form-terms__label form-terms__label-contacts"
-                for="privacy-contacts"
-              >
+        <div class="container">
+          <div class="contact-block">
+            <h2 class="contact-block__title title">
+              Our experts will take care of your friend
+            </h2>
+            <p class="contact-block__text">
+              Fill out the form so we can contact you!
+            </p>
+            <form class="contact-block__form">
+              <div class="contacts-input">
+                <svg class="contacts-input__icon">
+                  <use href="./images/icons.svg#icon-form-name"></use>
+                </svg>
                 <input
-                  class="form-terms__control"
-                  type="checkbox"
-                  id="privacy-contacts"
+                  class="contacts-input__control"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Your name"
+                  required
                 />
-                <svg
-                  class="form-terms__icon form-terms__icon--empty"
-                  width="16"
-                  height="16"
+                <label
+                  class="contacts-input__label visually-hidden"
+                  for="user-name"
+                  >Your name</label
                 >
-                  <use href="./images/icons.svg#icon-checkbox"></use>
+              </div>
+              <div class="contacts-input">
+                <svg class="contacts-input__icon">
+                  <use href="./images/icons.svg#icon-form-pet-name"></use>
                 </svg>
-                <svg
-                  class="form-terms__icon form-terms__icon--checked"
-                  width="16"
-                  height="16"
+                <input
+                  class="contacts-input__control"
+                  type="text"
+                  name="pet-name"
+                  id="pet-name"
+                  placeholder="Pet name"
+                  required
+                />
+                <label
+                  class="contacts-input__label visually-hidden"
+                  for="pet-name"
+                  >Pet name</label
                 >
-                  <use href="./images/icons.svg#icon-checkbox-active"></use>
+              </div>
+              <div class="contacts-input">
+                <svg class="contacts-input__icon">
+                  <use href="./images/icons.svg#icon-form-phone"></use>
                 </svg>
-                <span>I agree to the privacy policy</span>
-              </label>
-            </div>
-          </form>
-          <div class="contacts-section__decor">
-            <img
-              class="icon contacts-light-dog"
-              src="./images/contacts/contacts-light-dog.png"
-              alt=""
-            />
-            <img
-              class="icon contacts-red-dog"
-              src="./images/contacts/contacts-red-dog.png"
-              alt=""
-            />
-            <svg class="icon contacts-paw-1" width="80" height="80">
-              <use href="./images/icons.svg#icon-contacts-paw"></use>
-            </svg>
-            <svg class="icon contacts-bone-1" width="80" height="68">
-              <use href="./images/icons.svg#icon-contacts-bone"></use>
-            </svg>
-            <svg class="icon contacts-collar" width="80" height="80">
-              <use href="./images/icons.svg#icon-contacts-collar"></use>
-            </svg>
-            <svg class="icon contacts-paw-2" width="80" height="80">
-              <use href="./images/icons.svg#icon-contacts-paw"></use>
-            </svg>
-            <svg class="icon contacts-bone-2" width="80" height="68">
-              <use href="./images/icons.svg#icon-contacts-bone"></use>
-            </svg>
+                <input
+                  class="contacts-input__control"
+                  type="tel"
+                  name="user-phone"
+                  id="user-phone"
+                  placeholder="Your phone"
+                  required
+                  pattern="\+\d{12}"
+                />
+                <label
+                  class="contacts-input__label visually-hidden"
+                  for="user-phone"
+                  >Your phone</label
+                >
+              </div>
+              <div class="contacts-input">
+                <svg class="contacts-input__icon">
+                  <use href="./images/icons.svg#icon-form-email"></use>
+                </svg>
+                <input
+                  class="contacts-input__control"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Your email"
+                  required
+                />
+                <label
+                  class="contacts-input__label visually-hidden"
+                  for="user-email"
+                  >Your email</label
+                >
+              </div>
+              <button class="btn btn--submit" type="submit">Contact us</button>
+              <div class="form-terms">
+                <label
+                  class="form-terms__label form-terms__label-contacts"
+                  for="privacy-contacts"
+                >
+                  <input
+                    class="form-terms__control"
+                    type="checkbox"
+                    id="privacy-contacts"
+                    required
+                  />
+                  <svg
+                    class="form-terms__icon form-terms__icon--empty icon--xs"
+                  >
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                  </svg>
+                  <svg
+                    class="form-terms__icon form-terms__icon--checked icon--xs"
+                  >
+                    <use href="./images/icons.svg#icon-checkbox-active"></use>
+                  </svg>
+                  <span>I agree to the privacy policy</span>
+                </label>
+              </div>
+            </form>
           </div>
+          <img
+            class="icon contacts-section__dog-light"
+            src="./images/contacts/contacts-light-dog.png"
+            srcset="./images/contacts/contacts-light-dog@2x.png 2x"
+            alt=""
+          />
+          <img
+            class="icon contacts-section__dog-red"
+            src="./images/contacts/contacts-red-dog.png"
+            srcset="./images/contacts/contacts-red-dog@2x.png 2x"
+            alt=""
+          />
+          <svg class="icon icon--sm contacts-section__paw-1">
+            <use href="./images/icons.svg#icon-contacts-paw"></use>
+          </svg>
+          <svg class="icon contacts-section__bone-1">
+            <use href="./images/icons.svg#icon-contacts-bone"></use>
+          </svg>
+          <svg class="icon icon--sm contacts-section__collar">
+            <use href="./images/icons.svg#icon-contacts-collar"></use>
+          </svg>
+          <svg class="icon contacts-section__paw-2">
+            <use href="./images/icons.svg#icon-contacts-paw"></use>
+          </svg>
+          <svg class="icon contacts-section__bone-2">
+            <use href="./images/icons.svg#icon-contacts-bone"></use>
+          </svg>
+          <svg
+            class="icon-paw icon-paw--page icon-paw--md contacts-section__bg-mobile-paw-1"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg
+            class="icon-paw icon-paw--page contacts-section__bg-mobile-paw-2"
+          >
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
         </div>
       </section>
     </main>
@@ -633,7 +743,7 @@
       <div class="container">
         <div class="footer__container">
           <div class="footer__left">
-            <div class="footer__branding">
+            <div>
               <a class="footer__logo link" href="/">
                 <img
                   class="footer__logo-icon"
@@ -641,17 +751,32 @@
                   alt="Dog Club logo"
                 />
               </a>
-              <ul class="footer-socials">
+              <a class="footer__logo--mobile link" href="/">
+                <img
+                  class="footer__logo-icon"
+                  src="./images/logo-mobile.svg"
+                  alt="Dog Club logo"
+                />
+              </a>
+              <ul class="footer__socials--desktop">
                 <li>
-                  <a href="#">
-                    <svg class="footer-socials__icon" width="40" height="40">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon--xl">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <svg class="footer-socials__icon" width="40" height="40">
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon--xl">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
@@ -660,45 +785,69 @@
             </div>
             <nav class="footer__nav">
               <ul class="footer__menu">
-                <li class="footer__menu-item">
+                <li>
                   <a class="footer__menu-link link" href="#activity-section"
                     >Less talk</a
                   >
                 </li>
-                <li class="footer__menu-item">
+                <li>
                   <a class="footer__menu-link link" href="#services-section"
                     >Services category</a
                   >
                 </li>
-                <li class="footer__menu-item">
+                <li>
                   <a class="footer__menu-link link" href="#customers-section"
                     >Happy customer</a
                   >
                 </li>
-                <li class="footer__menu-item">
+                <li>
                   <a class="footer__menu-link link" href="#contacts-section"
                     >Contact</a
                   >
                 </li>
               </ul>
             </nav>
+            <ul class="footer__socials--mobile">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon--lg">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon--lg">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
           <form class="footer__form">
             <div class="footer-input">
-              <svg class="footer-input__icon" width="24" height="24">
+              <svg class="footer-input__icon icon--md">
                 <use href="./images/icons.svg#icon-form-email"></use>
               </svg>
               <input
                 class="footer-input__control footer-input__control-email"
                 type="email"
                 name="user-email"
-                id="user-email"
+                id="footer-user-email"
                 placeholder="Your email"
                 required
               />
               <label
                 class="footer-input__label visually-hidden"
-                for="user-email"
+                for="footer-user-email"
                 >Your email</label
               >
             </div>
@@ -722,18 +871,13 @@
                   class="form-terms__control"
                   type="checkbox"
                   id="privacy-footer"
+                  required
                 />
-                <svg
-                  class="form-terms__icon form-terms__icon--empty"
-                  width="16"
-                  height="16"
-                >
+                <svg class="form-terms__icon form-terms__icon--empty icon--xs">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
                 <svg
-                  class="form-terms__icon form-terms__icon--checked"
-                  width="16"
-                  height="16"
+                  class="form-terms__icon form-terms__icon--checked icon--xs"
                 >
                   <use href="./images/icons.svg#icon-checkbox-active"></use>
                 </svg>
@@ -744,7 +888,138 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg class="icon--xs">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <div class="contact-block">
+          <h2 class="contact-block__title title">
+            Our experts will take care of your friend
+          </h2>
+          <p class="contact-block__text">
+            Fill out the form so we can contact you!
+          </p>
+          <form class="contact-block__form">
+            <div class="contacts-input">
+              <svg class="contacts-input__icon icon--lg">
+                <use href="./images/icons.svg#icon-form-name"></use>
+              </svg>
+              <input
+                class="contacts-input__control"
+                type="text"
+                name="user-name"
+                id="modal-user-name"
+                placeholder="Your name"
+                required
+              />
+              <label
+                class="contacts-input__label visually-hidden"
+                for="modal-user-name"
+                >Your name</label
+              >
+            </div>
+            <div class="contacts-input">
+              <svg class="contacts-input__icon icon--lg">
+                <use href="./images/icons.svg#icon-form-pet-name"></use>
+              </svg>
+              <input
+                class="contacts-input__control"
+                type="text"
+                name="pet-name"
+                id="modal-pet-name"
+                placeholder="Pet name"
+                required
+              />
+              <label
+                class="contacts-input__label visually-hidden"
+                for="modal-pet-name"
+                >Pet name</label
+              >
+            </div>
+            <div class="contacts-input">
+              <svg class="contacts-input__icon icon--lg">
+                <use href="./images/icons.svg#icon-form-phone"></use>
+              </svg>
+              <input
+                class="contacts-input__control"
+                type="tel"
+                name="user-phone"
+                id="modal-user-phone"
+                placeholder="Your phone"
+                required
+                pattern="\+\d{12}"
+              />
+              <label
+                class="contacts-input__label visually-hidden"
+                for="modal-user-phone"
+                >Your phone</label
+              >
+            </div>
+            <div class="contacts-input">
+              <svg class="contacts-input__icon icon--lg">
+                <use href="./images/icons.svg#icon-form-email"></use>
+              </svg>
+              <input
+                class="contacts-input__control"
+                type="email"
+                name="user-email"
+                id="modal-user-email"
+                placeholder="Your email"
+                required
+              />
+              <label
+                class="contacts-input__label visually-hidden"
+                for="modal-user-email"
+                >Your email</label
+              >
+            </div>
+            <button class="btn btn--submit" type="submit">Contact us</button>
+            <div class="form-terms">
+              <label
+                class="form-terms__label form-terms__label-contacts"
+                for="privacy-modal"
+              >
+                <input
+                  class="form-terms__control"
+                  type="checkbox"
+                  id="privacy-modal"
+                  required
+                />
+                <svg class="form-terms__icon form-terms__icon--empty icon--xs">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <svg
+                  class="form-terms__icon form-terms__icon--checked icon--xs"
+                >
+                  <use href="./images/icons.svg#icon-checkbox-active"></use>
+                </svg>
+                <span>I agree to the privacy policy</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div>
+          <svg class="icon-paw icon-paw--modal icon-paw--lg modal__bg-paw-1">
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg class="icon-paw icon-paw--modal icon-paw--lg modal__bg-paw-2">
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg class="icon-paw icon-paw--modal icon-paw--lg modal__bg-paw-3">
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+          <svg class="icon-paw icon-paw--modal icon-paw--lg modal__bg-paw-4">
+            <use href="./images/icons.svg#icon-bg-paw"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/customers-slider.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
