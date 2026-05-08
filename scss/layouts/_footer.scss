@@ -86,13 +86,11 @@
     display: none;
     @media screen and (min-width: $bp-desktop) {
       display: flex;
-      gap: 8px;
       align-items: center;
     }
   }
   &__socials--mobile {
     display: flex;
-    gap: 8px;
     align-items: center;
     margin: 0 auto;
     @media screen and (min-width: $bp-desktop) {
